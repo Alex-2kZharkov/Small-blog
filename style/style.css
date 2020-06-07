@@ -1,0 +1,291 @@
+body {
+    margin: 0;
+}
+
+.my_header {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Vollkorn', serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 40px 15%;
+}
+
+.logo {
+    position: absolute;
+    top: 35px;
+    font-size: 70px;
+    color: #ffffff;
+
+}
+
+.text {
+    margin-left: 100px;
+}
+
+.capture {
+    font-size: 30px;
+}
+
+.menu {
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+}
+
+.item_header {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color .1s linear;
+    transition: text-decoration .1s linear;
+    transition: font-weight .1s linear;
+}
+
+.item_header:hover {
+    color: #fce38a;
+    text-decoration: underline;
+    font-weight: 900;
+}
+
+.active {
+    color: #fce38a;
+    text-decoration: underline;
+    font-weight: 900;
+}
+
+.post_search {
+    padding: 30px 0px;
+}
+
+.all_posts {
+    color: #54918f;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.all_posts:hover {
+    text-decoration: underline;
+}
+
+#search_logo {
+    cursor: pointer;
+}
+
+.search {
+    position: absolute;
+    right: 245px;
+    display: flex;
+    width: 250px;
+    justify-content: space-around;
+    align-items: center;
+    /* opacity: 0; */
+}
+
+.search_box {
+    width: 80%;
+    padding: 5px 0;
+    border: none;
+    border-bottom: solid 1px #000000;
+    outline: none;
+}
+
+.search_search {
+    cursor: pointer;
+}
+
+.search_close {
+    cursor: pointer;
+}
+
+.posts {
+    padding: 0 15%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.item {
+
+    width: 27%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+
+
+.posts_info {
+    padding: 30px;
+    border-bottom: solid 1px #A9A9A9;
+    border-left: solid 1px #A9A9A9;
+    border-right: solid 1px #A9A9A9;
+}
+
+.post_image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.author_avatar {
+    color: #A9A9A9;
+    position: absolute;
+    left: -5px;
+    bottom: 5px;
+    font-size: 35px;
+}
+
+.post_author {
+
+    font-size: 14px;
+    position: relative;
+}
+
+.author_name {
+    margin-left: 35px;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.author_name:hover {
+    color: #54918f;
+}
+
+.post_date {
+    margin-top: 5px;
+    margin-left: 35px;
+    opacity: 0.7;
+}
+
+.post_more {
+    color: #A9A9A9;
+    position: absolute;
+    right: 20px;
+    bottom: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.zoom {
+    cursor: pointer;
+    font-size: 16px;
+    position: absolute;
+    top: -20px;
+    right: 5px;
+}
+
+.zoom_out {
+    right: -20px;
+}
+
+.post_title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    line-height: 1.5;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    opacity: 0.7;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000000;
+}
+
+.post_title:hover {
+    color: #54918f;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.post_content {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 18px;
+    opacity: 0.7;
+    line-height: 1.5;
+    padding-bottom: 20px;
+    border-bottom: solid 1px #A9A9A9;
+    cursor: pointer;
+}
+
+.post_social {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+
+}
+
+.post_views {
+    color: #A9A9A9;
+}
+
+.post_comment {
+    cursor: pointer;
+}
+
+.post_like {
+    cursor: pointer;
+    color: #e84a43;
+}
+
+.heart {
+    animation: heart 0.5s linear;
+}
+
+@keyframes heart {
+    0% {
+        transform: rotate(0deg) scale(2);
+    }
+
+    40% {
+        transform: rotate(0deg) scale(1);
+    }
+
+    41% {
+        transform: rotate(360deg) scale(1);
+    }
+
+    100% {
+        transform: rotate(0deg) scale(1);
+        background-color: none;
+    }
+}
+
+.footer {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Vollkorn', serif;
+}
+
+.copyright_logo {
+    position: absolute;
+    top: 43%;
+    left: 15%;
+
+}
+
+.copyright_developer {
+    margin-left: 20px;
+}
+
+.developer_name {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.social_links {
+    display: flex;
+    justify-content: space-between;
+    width: 12%;
+}
+
+.social_links_logo {
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none;
+}
